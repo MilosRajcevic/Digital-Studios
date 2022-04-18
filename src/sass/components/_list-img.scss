@@ -1,0 +1,122 @@
+.list-img {
+  padding: 90px 0 120px;
+  background-color: $grey-light;
+
+  @include respond(tab) {
+    padding: 75px 0 66px;
+  }
+}
+
+.list-img__content {
+  display: flex;
+
+  @include respond(mob) {
+    flex-direction: column-reverse;
+  }
+}
+
+.list-img__list-box {
+  max-width: 760px;
+  margin-right: 10px;
+}
+
+.list-img__heading {
+  max-width: 470px;
+  @include respond(mob) {
+    margin-bottom: 10px;
+  }
+}
+
+.list-img__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @include respond(tab) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  @include respond(mob) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.list-img__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond(mob) {
+    justify-content: space-around;
+  }
+}
+
+.list-img__item {
+  width: 320px;
+  margin-right: 51px;
+  margin-bottom: 38px;
+
+  @include respond(tab) {
+    width: 160px;
+    margin-right: 40px;
+  }
+
+  @include respond(mob) {
+    width: 120px;
+    margin-right: 0;
+  }
+}
+
+.list-img__icon-box {
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+
+.list-img__icon {
+}
+
+.list-img__text-box {
+}
+
+.list-img__item-heading {
+  color: $purple;
+  margin-bottom: 10px;
+
+  @include respond(tab) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+.list-img__item-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @include respond(tab) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.list-img__img-box {
+  @include respond(mob) {
+    margin-bottom: 10px;
+  }
+}
+
+.list-img__img {
+  border-radius: 15px;
+  @include respond(mob) {
+    max-height: 280px;
+  }
+}
+
+.list-img__btn {
+  @include respond(mob) {
+    width: 100%;
+    text-align: center;
+  }
+}

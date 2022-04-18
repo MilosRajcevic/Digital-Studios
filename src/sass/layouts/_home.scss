@@ -1,0 +1,60 @@
+.text {
+  background-color: rgba($grey-bg, 0.8);
+  padding: 20px 0;
+
+  @include respond(mob) {
+    padding: 40px 0 60px;
+  }
+}
+
+.text__content {
+  display: flex;
+
+  @include respond(mob) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.text__left-side {
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 51px;
+  color: $black;
+  padding-right: 20px;
+  border-right: 4px solid $grey-bg;
+
+  @include respond(tab) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  @include respond(mob) {
+    font-size: 22px;
+    line-height: 29px;
+    padding-bottom: 46px;
+    border-right: none;
+    border-bottom: 4px solid $grey-bg;
+    padding-right: 0;
+  }
+}
+
+.text__right-side {
+  padding-left: 45px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 635px;
+
+  @include respond(tab) {
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 30px;
+  }
+
+  @include respond(mob) {
+    padding-top: 32px;
+    padding-left: 0;
+  }
+}

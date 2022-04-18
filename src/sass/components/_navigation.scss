@@ -1,0 +1,174 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 28px 0;
+  z-index: 100;
+
+  @include respond(tab) {
+  }
+
+  @include respond(mob) {
+    padding: 27px 0;
+  }
+}
+.nav__logo {
+  @include respond(tab) {
+    width: 150px;
+    height: 26.5px;
+  }
+}
+
+.nav__logo-img {
+  width: 100%;
+}
+
+.nav__list {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  flex-direction: column;
+  z-index: 500;
+  width: 40%;
+  height: 100vh;
+  background-color: $white;
+  @include invisible;
+  transition: all 0.3s;
+  padding-left: 65px;
+  padding-top: 28px;
+  box-shadow: 2px 0 10px 10px rgba($black, 0.2);
+
+  @include respond(tab) {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  @include respond(mob) {
+    width: 90%;
+  }
+
+  &.active {
+    transform: translateX(0);
+
+    right: 0;
+    @include visible;
+    transition: opacity 0.3s ease-in-out, left 0.3s;
+  }
+}
+
+.nav__item {
+  position: relative;
+  padding: 0 5px;
+  transition: background-color 0.4s;
+  border-radius: 100px;
+  width: fit-content;
+  margin-bottom: 40px;
+
+  @include respond(tab) {
+    margin-bottom: 15px;
+  }
+}
+
+.nav__link {
+  color: $black;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+
+  @include respond(tab) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.nav__link-btn {
+  margin-bottom: 65px;
+
+  @include respond(tab) {
+    margin-bottom: 0;
+  }
+}
+
+.nav__link-icon {
+  margin-right: 5px;
+}
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+
+  @include respond(tab) {
+    margin-left: auto;
+  }
+}
+
+.nav__cta {
+  margin-right: 72px;
+
+  @include respond(tab) {
+    margin-right: 36px;
+  }
+
+  @include respond(mob) {
+    display: none;
+  }
+}
+
+.nav__mob-menu {
+  // display: none;
+
+  // @include respond(tab) {
+  //   display: flex;
+  //   align-items: center;
+  // }
+}
+
+.social-link {
+}
+
+.social-link__text-box {
+}
+
+.social-link__text {
+  font-size: 18px;
+  line-height: 25px;
+  color: $black;
+  margin-bottom: 25px;
+
+  @include respond(tab) {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.social-link__list {
+  display: flex;
+}
+
+.social-link__item {
+  padding: 17px;
+  background-color: $grey-light;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  @include respond(tab) {
+    padding: 8px;
+  }
+}
+
+.social-link__link {
+  color: $purple;
+  font-size: 32px;
+
+  @include respond(tab) {
+    font-size: 16px;
+  }
+}

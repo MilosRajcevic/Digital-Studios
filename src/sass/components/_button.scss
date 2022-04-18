@@ -1,0 +1,131 @@
+.nav__hamburger-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2000;
+
+  & span {
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    background-color: $black;
+    transition: all 0.3s;
+
+    &:first-child {
+      right: 4px;
+      top: 10px;
+      width: 70%;
+    }
+
+    &:nth-child(2) {
+      top: 18px;
+      width: 100%;
+      left: 0;
+    }
+
+    &:last-child {
+      left: 4px;
+      top: 26px;
+      width: 70%;
+    }
+  }
+
+  &.active {
+    background-color: $grey-bg;
+    border-radius: 50%;
+
+    & span {
+      &:first-child {
+        top: 20px;
+        left: 20px;
+        transform: translate(-50%) rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        top: 20px;
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      &:last-child {
+        top: 20px;
+        left: 20px;
+        transform: translate(-50%) rotate(-135deg);
+      }
+    }
+  }
+}
+// General BTN link
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  background-color: $purple;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: $white;
+  transition: background 0.3s;
+  width: fit-content;
+
+  &:hover {
+    background: $purple-dark;
+  }
+
+  @include respond(tab) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+// ACCORDION BTN +
+
+.accordion__btn-icon {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  transition: all 0.3s;
+
+  & span {
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    background: $black-bg;
+    top: 50%;
+    left: 50%;
+    transition: all 0.4s;
+
+    @include respond(mob) {
+      height: 3px;
+      width: 15px;
+    }
+
+    &:first-child {
+      transform: translate(-50%, -50%);
+    }
+
+    &:last-child {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
+
+.accordion__btn {
+  &.active .accordion__btn-icon {
+    & span {
+      &:first-child {
+        transform: translateX(100%) rotate(360deg);
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-inter;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-style: normal;
+  color: $black-low-opacity;
+  font-weight: 400;
+}
+
+::selection {
+  background: $selection-color;
+  color: $selection-text-color;
+}
+
+:focus {
+  outline-color: $outline-color;
+}
+
+.wrapper {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @include respond(tab) {
+    padding: 0 30px;
+  }
+
+  @include respond(mob) {
+    padding: 0 20px;
+  }
+}

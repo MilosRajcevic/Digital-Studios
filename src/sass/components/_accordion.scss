@@ -1,0 +1,104 @@
+.accordion {
+  background-color: $grey-light;
+  padding-bottom: 51px;
+  text-align: center;
+  @include respond(tab) {
+  }
+}
+
+.accordion__header {
+  margin-bottom: 30px;
+
+  @include respond(mob) {
+    margin-bottom: 20px;
+  }
+}
+
+.accordion__text-info {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 auto;
+  line-height: 28px;
+  margin-bottom: 40px;
+  max-width: 1050px;
+
+  @include respond(tab) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  @include respond(mob) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.accordion__row {
+  text-align: left;
+  max-width: 886px;
+  background-color: $grey-bg;
+  padding: 32px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  @include respond(mob) {
+    padding: 24px 24px 20px;
+  }
+}
+
+.accordion__btn {
+  background: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  @include respond(mob) {
+    text-align: start;
+  }
+}
+
+.accordion__btn-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  color: $black;
+
+  @include respond(mob) {
+  }
+}
+
+.accordion__text-box {
+  margin-right: 55px;
+  max-height: 0;
+  @include invisible;
+  transition: all 0.3s;
+
+  &.active {
+    @include visible;
+    max-height: 1000px;
+  }
+
+  @include respond(mob) {
+    margin-right: 0;
+  }
+}
+
+.accordion__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 20px;
+
+  @include respond(mob) {
+  }
+}
+
+.accordion__highlight {
+  color: $purple;
+  font-weight: 700;
+}
