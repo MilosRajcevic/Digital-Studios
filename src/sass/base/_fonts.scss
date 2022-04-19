@@ -26,7 +26,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-world:before {
+  content: "\e90e";
+}
+.icon-globe:before {
+  content: "\e90e";
+}
+.icon-internet:before {
+  content: "\e90e";
+}
+.icon-network:before {
+  content: "\e90e";
+}
+.icon-location_on:before {
+  content: "\e90f";
+}
 .icon-clear:before {
   content: "\e90b";
 }

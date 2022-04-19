@@ -1,0 +1,131 @@
+.cards-icon {
+  background-color: $grey-low-opacity;
+  padding: 40px 0 100px;
+}
+
+.cards-icon__heading {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cards-icon__text {
+  text-align: center;
+  margin-bottom: 74px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba($black, 0.8);
+}
+.card-icon__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards-icon__card {
+  background-color: $white;
+  padding: 40px 72px 40px 50px;
+  border-radius: 40px;
+  transition: box-shadow 0.3s, transition 0.3s;
+  margin-bottom: 40px;
+
+  &:hover {
+    box-shadow: 1px 5px 20px 20px rgba($black, 0.1);
+    transform: translateY(-1px);
+  }
+
+  @include respond(tab) {
+    padding: 32px 25px 46px 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.cards-icon__icon-box {
+  padding: 20px;
+  background-color: $purple-icon-bg;
+  width: fit-content;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.cards-icon__icon {
+  width: 36px;
+  height: 36px;
+
+  @include respond(mob) {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.cards-icon__item-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: $black;
+  margin-bottom: 16px;
+
+  @include respond(tab) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include respond(mob) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.cards-icon__item-text {
+  max-width: 488px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $black-low-opacity;
+  margin-bottom: 30px;
+
+  @include respond(tab) {
+    max-width: 295px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.cards-icon__btns {
+  display: flex;
+  align-items: center;
+
+  @include respond(tab) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.cards-icon__btn {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  @include respond(tab) {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.cards-icon__btn--white {
+  background-color: $white;
+  color: $purple;
+  border: 2px solid $purple;
+
+  &:hover {
+    color: $white;
+  }
+}

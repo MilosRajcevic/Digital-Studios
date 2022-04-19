@@ -1,6 +1,6 @@
 .text {
-  background-color: rgba($grey-bg, 0.8);
-  padding: 20px 0;
+  background-color: $grey-low-opacity;
+  padding: 70px 0;
 
   @include respond(mob) {
     padding: 40px 0 60px;
@@ -56,5 +56,40 @@
   @include respond(mob) {
     padding-top: 32px;
     padding-left: 0;
+  }
+}
+
+// Hero about
+.hero-about {
+  text-align: center;
+  background-color: $grey-light;
+  padding: 40px 0;
+}
+
+.hero-about__content {
+}
+
+.hero-about__heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57px;
+  color: $black;
+  margin-bottom: 12px;
+
+  @include respond(mob) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.hero-about__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $black-low-opacity;
+
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
