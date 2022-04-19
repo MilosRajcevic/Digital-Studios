@@ -1,0 +1,59 @@
+.rte {
+  background-color: $grey-light;
+  padding-bottom: 80px;
+
+  & h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    color: $black;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $black-low-opacity;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include respond(tab) {
+    & h2 {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
+  @include respond(mob) {
+    & h2 {
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 25px;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 25px;
+
+      &:not(:last-child) {
+        margin-bottom: 37px;
+      }
+    }
+  }
+}
+
+.rte__box {
+  &:not(:last-child) {
+    margin-bottom: 42px;
+  }
+
+  @include respond(tab) {
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+}

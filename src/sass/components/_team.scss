@@ -1,0 +1,105 @@
+.team {
+  background-color: $grey-light;
+
+  padding: 100px 0 135px;
+
+  @include respond(tab) {
+    padding: 69px 0;
+  }
+
+  @include respond(mob) {
+    padding: 55px 0;
+  }
+}
+
+.team__content {
+  margin: 0 auto;
+}
+
+.team__heading {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.team__text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $black-low-opacity;
+  margin-bottom: 57px;
+}
+
+.team__leaders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include respond(mob) {
+    justify-content: space-between;
+  }
+}
+
+.team__leader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 200px;
+  }
+
+  @include respond(tab) {
+    width: 180px;
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 60px;
+    }
+  }
+
+  @include respond(mob) {
+    width: 160px;
+
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(2n + 2)) {
+      margin-right: 0;
+    }
+  }
+}
+
+.team__leader-img {
+  width: 180px;
+  margin-bottom: 20px;
+
+  @include respond(tab) {
+    margin-bottom: 16px;
+    width: 115px;
+  }
+}
+
+.team__leader-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  color: $black;
+  margin-bottom: 10px;
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.team__leader-titel {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $black-low-opacity;
+
+  @include respond(mob) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

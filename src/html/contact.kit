@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+  <head>
+    <!-- @import "head.kit"-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <!-- @import "nav.kit"-->
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-about">
+        <div class="wrapper">
+          <div class="hero-about__content">
+            <h1 class="hero-about__heading">Contact us</h1>
+            <p class="hero-about__text">
+              Felis nunc, aliquet quam dictum senectus nunc.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-form">
+        <div class="wrapper">
+          <div class="info-form__content">
+            <div class="info-form__info">
+              <h3 class="info-form__info-heading">Contact Information</h3>
+              <p class="info-form__info-text">
+                Fill up the form and our Team will get back to you within 24
+                hours.
+              </p>
+              <div class="info-form__infos">
+                <div class="info-form__link-box">
+                  <span class="info-form__icon icon-phone"></span>
+                  <a href="tel:+91 98765 43210" class="info-form__link">
+                    +91 98765 43210</a
+                  >
+                </div>
+                <div class="info-form__link-box">
+                  <span class="info-form__icon icon-email"></span>
+                  <a href="mailto:domain@paypal.com" class="info-form__link">
+                    domain@paypal.com</a
+                  >
+                </div>
+                <div class="info-form__link-box">
+                  <span class="info-form__icon icon-world"></span>
+                  <a href="https://paypal.com" class="info-form__link">
+                    https://paypal.com</a
+                  >
+                </div>
+                <div class="info-form__link-box">
+                  <span class="info-form__icon icon-location_on"></span>
+                  <a href="google.maps" class="info-form__link">Location</a>
+                </div>
+              </div>
+              <span class="info-form__circle info-form__circle--small"
+                >&nbsp;</span
+              >
+              <span class="info-form__circle info-form__circle--big"
+                >&nbsp;</span
+              >
+            </div>
+
+            <form class="info-form__form">
+              <div class="info-form__group-2-col">
+                <div class="info-form__group">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+
+                <div class="info-form__group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </div>
+              </div>
+
+              <div class="info-form__group-2-col">
+                <div class="info-form__group">
+                  <label for="email">Your email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="info-form__group">
+                  <label for="Phone">Phone</label>
+                  <input type="tel" id="Phone" name="Phone" />
+                </div>
+              </div>
+
+              <div class="info-form__list">
+                <label>What service do you need?</label>
+                <div class="info-form__list-items">
+                  <div class="info-form__group--checkbox">
+                    <input
+                      class="info-form__checkbox"
+                      type="checkbox"
+                      id="Web Design"
+                      name="Web Design"
+                      value="Web Design"
+                    />
+                    <label class="info-form__radio-box" for="Web Design"
+                      ><span class="info-form__radio-btn"></span> Web
+                      Design</label
+                    >
+                  </div>
+
+                  <div class="info-form__group--checkbox">
+                    <input
+                      class="info-form__checkbox"
+                      type="checkbox"
+                      id="App Design"
+                      name="App Design"
+                      value="App Design"
+                    />
+                    <label class="info-form__radio-box" for="App Design"
+                      ><span class="info-form__radio-btn"></span> App
+                      Design</label
+                    >
+                  </div>
+
+                  <div class="info-form__group--checkbox">
+                    <input
+                      class="info-form__checkbox"
+                      type="checkbox"
+                      id="Graphic Design"
+                      name="Graphic Design"
+                      value="Graphic Design"
+                    />
+                    <label class="info-form__radio-box" for="Graphic Design"
+                      ><span class="info-form__radio-btn"></span> Graphic
+                      Design</label
+                    >
+                  </div>
+
+                  <div class="info-form__group--checkbox">
+                    <input
+                      class="info-form__checkbox"
+                      type="checkbox"
+                      id="Digital Marketing"
+                      name="Digital Marketing"
+                      value="Digital Marketing"
+                    />
+                    <label class="info-form__radio-box" for="Digital Marketing"
+                      ><span class="info-form__radio-btn"></span> Digital
+                      Marketing</label
+                    >
+                  </div>
+
+                  <div class="info-form__group--checkbox">
+                    <input
+                      class="info-form__checkbox"
+                      type="checkbox"
+                      id="Other"
+                      name="Other"
+                      value="Other"
+                    />
+                    <label class="info-form__radio-box" for="Other"
+                      ><span class="info-form__radio-btn"></span> Other</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-form__group">
+                <label class="form__relative" for="message">Message</label>
+                <textarea
+                  placeholder="Write your message..."
+                  class="form__message"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  cols="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="info-form__submit">
+                <input
+                  class="info-form__btn btn"
+                  type="submit"
+                  value="Send Message"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- @import "projects.kit"-->
+    </main>
+    <!-- @import "footer.kit"-->
+  </body>
+</html>
