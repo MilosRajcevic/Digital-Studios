@@ -116,6 +116,11 @@
   font-weight: 600;
   line-height: 35px;
   color: $purple;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 2px 0 0 $purple;
+  }
 }
 
 .hero__border-bottom {
