@@ -3,7 +3,7 @@
   padding-bottom: 100px;
 
   @include respond(tab) {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 
@@ -129,10 +129,18 @@
 
 .blogs__sides {
   display: flex;
+
+  @include respond(tab) {
+    flex-direction: column;
+  }
 }
 
 .blogs__left {
   margin-right: 50px;
+
+  @include respond(tab) {
+    margin-right: 0;
+  }
 }
 
 .blogs__content {
@@ -151,6 +159,10 @@
     box-shadow: 1px 5px 20px 10px rgba($black, 0.1);
     transform: translateY(-1px);
   }
+
+  @include respond(mob) {
+    width: 100%;
+  }
 }
 
 .blogs__img-box {
@@ -158,10 +170,22 @@
 
 .blogs__img {
   width: 335px;
+
+  @include respond(mob) {
+    width: 100px;
+    height: 126px;
+  }
 }
 
 .blogs__text-box {
   padding: 20px 35px 20px 45px;
+
+  @include respond(tab) {
+    padding: 20px 30px 20px 35px;
+  }
+  @include respond(mob) {
+    padding: 16px 13px 16px 20px;
+  }
 }
 
 .blogs__heading {
@@ -169,6 +193,17 @@
   font-weight: 500;
   line-height: 39px;
   color: $black;
+
+  @include respond(tab) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .blogs__text {
@@ -177,6 +212,16 @@
   line-height: 27px;
   color: $black-low-opacity;
   margin-bottom: 30px;
+
+  @include respond(tab) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  @include respond(mob) {
+    display: none;
+  }
 }
 
 .blogs__post {
@@ -186,6 +231,16 @@
   font-weight: 400;
   line-height: 19px;
   color: $black-low-opacity;
+
+  @include respond(tab) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include respond(mob) {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
 
 .blog__container {
@@ -198,5 +253,13 @@
 
   &:not(:nth-child(odd)) {
     margin-right: 0;
+  }
+
+  @include respond(tab) {
+    max-width: 312px;
+  }
+
+  @include respond(mob) {
+    width: 100%;
   }
 }

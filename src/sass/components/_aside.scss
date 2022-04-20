@@ -1,5 +1,9 @@
 .aside {
   max-width: 385px;
+
+  @include respond(tab) {
+    padding-bottom: 90px;
+  }
 }
 
 .aside__header {
@@ -34,6 +38,10 @@
 
 .aside__text-box {
   padding: 15px 0 13px 15px;
+
+  @include respond(mob) {
+    padding: 5px 2px 13px 5px;
+  }
 }
 
 .aside__blog-header {
@@ -42,6 +50,11 @@
   line-height: 23px;
   color: $black;
   margin-bottom: 15px;
+
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .aside__post {
@@ -52,6 +65,11 @@
   display: flex;
   justify-content: space-between;
   padding-right: 13px;
+
+  @include respond(mob) {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
 
 .aside__date {
